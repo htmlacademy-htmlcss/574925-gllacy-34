@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Антон Толстенко](https://up.htmlacademy.ru/htmlcss/34/user/574925).
-* Наставник: `Неизвестно`.
+- Студент: [Антон Толстенко](https://up.htmlacademy.ru/htmlcss/34/user/574925).
+- Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
