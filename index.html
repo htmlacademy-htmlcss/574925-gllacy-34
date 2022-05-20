@@ -12,19 +12,19 @@
       <a href="https://htmlacademy.ru/" class="main-header__logo"><img src="#" alt=""></a>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="catalog.html" class="navigation__link">Каталог</a></li>
-          <li class="navigation__item"><a href="delivery.html" class="navigation__link">Доставка и оплата</a></li>
-          <li class="navigation__item"><a href="about.html" class="navigation__link">О компании</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="delivery.html">Доставка и оплата</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="about.html">О компании</a></li>
         </ul>
       </nav>
       <nav class="user">
         <ul class="user__list">
-          <li class="user__item"><a href="tel:+78005558628" class="user__link user__link--phone">+7800555-86-28</a></li>
-          <li class="user__item"><a href="#" class="user__link user__link--search-btn"><span
+          <li class="user__item"><a class="user__link user__link--phone" href="tel:+78005558628">+7800555-86-28</a></li>
+          <li class="user__item"><a class="user__link user__link--search-btn" href="#"><span
                 class="visually-hidden">Поиск</span></a></li>
-          <li class="user__item"><a href="#" class="user__link user__link--login">Вход</a></li>
+          <li class="user__item"><a class="user__link user__link--login" href="#">Вход</a></li>
           <li class="user__item">
-            <a href="#" class="user__link user__link--cart cart">
+            <a class="user__link user__link--cart cart" href="#">
               <span class="visually-hidden">Корзина товаров</span>
               <span class="cart__count">2</span>
               <span class="cart__text"> товара</span>
@@ -34,23 +34,35 @@
       </nav>
     </div>
   </header>
-  <main class="main-content"></main>
+  <main class="main-content">
+
+  </main>
   <footer class="main-footer">
     <div class="wrapper">
-      <ul class="social social-list">
-        <li class="social__item"><a href="https://t.me/htmlacademy" class="social__link"></a></li>
-        <li class="social__item"><a href="https://vk.com/htmlacademy" class="social__link"></a></li>
-        <li class="social__item"><a href="https://www.youtube.com/user/htmlacademyru" class="social__link"></a></li>
-      </ul>
-      <ul class="info info__list">
-        <li class="info__item"><a href="#" class="info__link">Для поставщиков</a></li>
-        <li class="info__item"><a href="#" class="info__link">О производстве</a></li>
-        <li class="info__item"><a href="#" class="info__link">Наши документы</a></li>
-        <li class="info__item"><a href="#" class="info__link">Экологические стандарты</a></li>
-      </ul>
-      <a href="https://htmlacademy.ru/" class="main-footer__logo"><img src="#" alt=""></a>
-      <p class="copyright">Сделано в <a href="https://htmlacademy.ru/" class="copyright__link">.html acadedmy</a> © 2021
-      </p>
+      <section class="social">
+        <ul class="social-list">
+          <li class="social__item"><a class="social__link" href="https://t.me/htmlacademy"><span
+                class="visualy-hidden">Телеграмм</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://vk.com/htmlacademy"><span
+                class="visualy-hidden">Вконтакте</span></a></li>
+          <li class="social__item"><a class="social__link" href="https://www.youtube.com/user/htmlacademyru"><span
+                class="visualy-hidden">Ютуб</span></a></li>
+        </ul>
+      </section>
+      <section class="info">
+        <ul class="info__list">
+          <li class="info__item"><a class="info__link" href="#">Для поставщиков</a></li>
+          <li class="info__item"><a class="info__link" href="#">О производстве</a></li>
+          <li class="info__item"><a class="info__link" href="#">Наши документы</a></li>
+          <li class="info__item"><a class="info__link" href="#">Экологические стандарты</a></li>
+        </ul>
+      </section>
+      <div class="copyright">
+        <a class="copyright__logo-link" href="https://htmlacademy.ru/"><img src="#" alt="htmlacademy"></a>
+        <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/">.html
+            acadedmy</a> © 2021
+        </p>
+      </div>
     </div>
   </footer>
 </body>
