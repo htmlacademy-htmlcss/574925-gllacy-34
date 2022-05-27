@@ -8,11 +8,12 @@
 
 <body>
   <header class="main-header">
-    <div class="wrapper">
+    <div class="container">
       <a class="main-header__logo"><img src="#" alt="логотип Глейси"></a>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
+          <!-- <li class="navigation__item"><button class="navigation__link navigation__link--current" type="button">Каталог</button></li> -->
           <li class="navigation__item"><a class="navigation__link" href="#">Доставка и оплата</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">О компании</a></li>
         </ul>
@@ -38,7 +39,7 @@
     </div>
   </header>
   <main class="main-index">
-    <div class="wrapper">
+    <div class="container">
       <h1 class="visualy-hidden">Магазин Глейси</h1>
       <div class="slider">
         <ul class="slider__list">
@@ -232,18 +233,20 @@
         </form>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title visualy-hidden">Адрес</h2>
-        <p class="contacts__text">Адрес главного офиса и офлайн-магазина:</p>
-        <b class="contacts__adress">наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
-        <p class="contacts__text">Для заказов по телефону:</p>
-        <a class="contacts__link contacts__link--tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <span class="contacts__text">(с 10 до 20 ежедневно)</span>
-        <a class="contacts__link contacts__link--form button button--red" href="#">Форма обратной связи</a>
+        <!-- <h2 class="contacts__title visualy-hidden">Адрес</h2> -->
+        <h2 class="contacts__title">Адрес главного офиса и офлайн-магазина:</h2>
+        <address class="contacts__wrapper">
+          <b class="contacts__adress">наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
+          <p class="contacts__text">Для заказов по телефону:</p>
+          <a class="contacts__link contacts__link--tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <span class="contacts__text">(с 10 до 20 ежедневно)</span>
+          <a class="contacts__link contacts__link--form button button--red" href="#">Форма обратной связи</a>
+        </address>
       </section>
     </div>
   </main>
   <footer class="main-footer">
-    <div class="wrapper">
+    <div class="container">
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item"><a class="social__link" href="https://t.me/htmlacademy"><span
