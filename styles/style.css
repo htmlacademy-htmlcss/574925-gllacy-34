@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+}
+
+body {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.navigation__link {
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.navigation__link--current {
+  color: #FCFCFC;
+}
+
+.user__link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.user__link--phone {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.slide__descr {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.actions__item:nth-child(1) {
+  background-image: url("../images/raspberry-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #FF7799;
+}
+
+.actions__item:nth-child(2) {
+  background-image: url("../images/marshmello-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #FF7799;
+}
+
+.actions__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.cards__item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.cards__item-descr {
+  color: #565C66;
+}
+
+.cards__item-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.advantages {
+  background-image: url("../images/advantages-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.advantages__item {
+  color: #565C66;
+}
+
+.blog {
+  background-image: url("../images/post-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.blog__link {
+  text-decoration: none;
+}
+
+.blog__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.blog__text {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.subscribe-form {
+  background-image: url("../images/subscribe-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe-form__text {
+  color: #565C66;
+}
+
+.delivery {
+  background-image: url("../images/delivery-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.delivery__descr {
+  color: #565C66;
+}
+
+.delivery-form__text {
+  color: #565C66;
+}
+
+.contacts {
+  background-image: url("../images/adress-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.contacts__title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #565C66;
+}
+
+.contacts__wrapper {
+  font-style: normal;
+}
+
+.contacts__adress {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts__text {
+  color: #565C66;
+}
+
+.contacts__link--tel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.contacts__small-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.info__link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.info__link--suppliers {
+  font-weight: 700;
+}
+
+.copyright__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.breadcrumbs__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.filter__group-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.input-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination__link {
+  line-height: 20px;
+  text-decoration: none;
+}

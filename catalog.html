@@ -4,15 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
 </head>
 
 <body>
   <header class="main-header">
-    <div class="wrapper">
-      <a class="main-header__logo" href="index.html"><img src="#" alt="логотип Глейси"></a>
+    <div class="container">
+      <a class="main-header__logo" href="index.html"><img src="images/icons/logo-header.svg" width="137" height="55"
+          alt="логотип Глейси"></a>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link navigation__link--current">Каталог</a></li>
+          <!-- <li class="navigation__item"><button class="navigation__link navigation__link--current" type="button">Каталог</button></li> -->
           <li class="navigation__item"><a class="navigation__link" href="#">Доставка и оплата</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">О компании</a></li>
         </ul>
@@ -38,17 +43,17 @@
     </div>
   </header>
   <main class="main-catalog">
-    <div class="wrapper">
-      <ul class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumbs">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link">Каталог</a>
         </li>
-      </ul>
+      </ol>
       <header class="inner-header">
-        <h1 class="inner-header__title">Сливочное мороженое</h1>
+        <h1 class="inner-header__title title">Сливочное мороженое</h1>
       </header>
       <section class="catalog">
         <h2 class="catalog__title visualy-hidden">Список товаров с фильтрами</h2>
@@ -68,19 +73,19 @@
             <legend class="filter__group-title">Жирность:</legend>
             <ul class="filter__group-list fatnes__list">
               <li class="fatnes__item">
-                <label class="fatnes__input-title">
+                <label class="fatnes__input-title input-title">
                   <input class="fatnes__input" type="radio" value="0%" name="fat-content">0%</label>
               </li>
               <li class="fatnes__item">
-                <label class="fatnes__input-title">
+                <label class="fatnes__input-title input-title">
                   <input class="fatnes__input" type="radio" value="до 10%" name="fat-content" checked>до 10%</label>
               </li>
               <li class="fatnes__item">
-                <label class="fatnes__input-title">
+                <label class="fatnes__input-title input-title">
                   <input class="fatnes__input" type="radio" value="до 30%" name="fat-content">до 30%</label>
               </li>
               <li class="fatnes__item">
-                <label class="fatnes__input-title">
+                <label class="fatnes__input-title input-title">
                   <input class="fatnes__input" type="radio" value="выше 30%" name="fat-content">выше 30%</label>
               </li>
             </ul>
@@ -89,23 +94,23 @@
             <legend class="filler__group-title">Наполнители:</legend>
             <ul class="filter__group-list fatnes__list">
               <li class="filler__item">
-                <label class="filler__input-title">
+                <label class="filler__input-title input-title">
                   <input class="filler__input" type="checkbox" name="chocolate" checked>шоколадные</label>
               </li>
               <li class="filler__item">
-                <label class="filler__input-title">
+                <label class="filler__input-title input-title">
                   <input class="filler__input" type="checkbox" name="sugar sprinkles" checked>сахарные посыпки</label>
               </li>
               <li class="filler__item">
-                <label class="filler__input-title">
+                <label class="filler__input-title input-title">
                   <input class="filler__input" type="checkbox" name="fruits">фрукты</label>
               </li>
               <li class="filler__item">
-                <label class="filler__input-title">
+                <label class="filler__input-title input-title">
                   <input class="filler__input" type="checkbox" name="syrups">сиропы</label>
               </li>
               <li class="filler__item">
-                <label class="filler__input-title">
+                <label class="filler__input-title input-title">
                   <input class="filler__input" type="checkbox" name="джемы">джемы</label>
               </li>
             </ul>
@@ -117,20 +122,22 @@
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Малинка</h3>
               <p class="cards__item-descr">Сливочное мороженое с малиновым джемом</p>
-              <img class="cards__item-img" src="#" alt="Сливочное мороженое с малиновым джемом">
+              <img class="cards__item-img" src="images/goods/raspberry.jpg" width="168" height="168"
+                alt="Сливочное мороженое с малиновым джемом">
               <div class="cards__item-row">
                 <b class="cards__item-price">310 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Фисташка</h3>
               <p class="cards__item-descr">Фисташковый пломбир с кусочками шоколада</p>
-              <img class="cards__item-img" src="#" alt="Фисташковый пломбир с кусочками шоколада">
+              <img class="cards__item-img" src="images/goods/pistachio.jpg" width="168" height="168"
+                alt="Фисташковый пломбир с кусочками шоколада">
               <div class="cards__item-row">
                 <b class="cards__item-price">340 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
@@ -138,11 +145,11 @@
               <h3 class="cards__item-title">Черника</h3>
               <p class="cards__item-descr">Крем-брюле
                 с черничным джемом</p>
-              <img class="cards__item-img" src="#" alt="Крем-брюле
+              <img class="cards__item-img" src="images/goods/blueberry.jpg" width="168" height="168" alt="Крем-брюле
                       с черничным джемом">
               <div class="cards__item-row">
                 <b class="cards__item-price">330 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
@@ -150,21 +157,22 @@
               <h3 class="cards__item-title">Бабл-гам</h3>
               <p class="cards__item-descr">Ванильный пломбир
                 со сладкой посыпкой</p>
-              <img class="cards__item-img" src="#" alt="Ванильный пломбир
+              <img class="cards__item-img" src="images/goods/bublegam.jpg" width="168" height="168" alt="Ванильный пломбир
                       со сладкой посыпкой">
               <div class="cards__item-row">
                 <b class="cards__item-price">320 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Ежевика</h3>
               <p class="cards__item-descr">Сливочное мороженое с ежевичным джемом</p>
-              <img class="cards__item-img" src="#" alt="Сливочное мороженое с ежевичным джемом">
+              <img class="cards__item-img" src="images/goods/blackberry.jpg" width="168" height="168"
+                alt="Сливочное мороженое с ежевичным джемом">
               <div class="cards__item-row">
                 <b class="cards__item-price">330 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
@@ -172,71 +180,77 @@
               <h3 class="cards__item-title">Банан</h3>
               <p class="cards__item-descr">Сливочный пломбир
                 с банановым вкусом</p>
-              <img class="cards__item-img" src="#" alt="Сливочный пломбир
+              <img class="cards__item-img" src="images/goods/banan.jpg" width="168" height="168" alt="Сливочный пломбир
         с банановым вкусом">
               <div class="cards__item-row">
                 <b class="cards__item-price">340 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Шоколадка</h3>
               <p class="cards__item-descr">Классический шоколадный пломбир</p>
-              <img class="cards__item-img" src="#" alt="Классический шоколадный пломбир">
+              <img class="cards__item-img" src="images/goods/chocolate.jpg" width="168" height="168"
+                alt="Классический шоколадный пломбир">
               <div class="cards__item-row">
                 <b class="cards__item-price">270 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Клубничка</h3>
               <p class="cards__item-descr">Сливочный пломбир</p>
-              <img class="cards__item-img" src="#" alt="с клубничным вкусом">
+              <img class="cards__item-img" src="images/goods/strawberry.jpg" width="168" height="168"
+                alt="с клубничным вкусом">
               <div class="cards__item-row">
                 <b class="cards__item-price">300 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Лимон</h3>
               <p class="cards__item-descr">Освежающий лимонный сорбет</p>
-              <img class="cards__item-img" src="#" alt="Освежающий лимонный сорбет">
+              <img class="cards__item-img" src="images/goods/lemon.jpg" width="168" height="168"
+                alt="Освежающий лимонный сорбет">
               <div class="cards__item-row">
                 <b class="cards__item-price">310 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Ментол</h3>
               <p class="cards__item-descr">Сливочный пломбир</p>
-              <img class="cards__item-img" src="#" alt="с ментоловым сиропом">
+              <img class="cards__item-img" src="images/goods/mentol.jpg" width="168" height="168"
+                alt="с ментоловым сиропом">
               <div class="cards__item-row">
                 <b class="cards__item-price">320 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Орешек</h3>
               <p class="cards__item-descr">Фисташковый пломбир с шоколадным сиропом</p>
-              <img class="cards__item-img" src="#" alt="Фисташковый пломбир с шоколадным сиропом">
+              <img class="cards__item-img" src="images/goods/nut.jpg" width="168" height="168"
+                alt="Фисташковый пломбир с шоколадным сиропом">
               <div class="cards__item-row">
                 <b class="cards__item-price">360 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
             <li class="product__item cards__item">
               <h3 class="cards__item-title">Крем-брюле</h3>
               <p class="cards__item-descr">Классическое крем-брюле </p>
-              <img class="cards__item-img" src="#" alt="Классическое крем-брюле ">
+              <img class="cards__item-img" src="images/goods/cream.jpg" width="168" height="168"
+                alt="Классическое крем-брюле ">
               <div class="cards__item-row">
                 <b class="cards__item-price">280 ₽/кг</b><a class="cards__item-btn" href="#"><span
-                    class="visualy-hidden">доавить в
+                    class="visualy-hidden">добавить в
                     корзину</span></a>
               </div>
             </li>
@@ -262,7 +276,7 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="wrapper">
+    <div class="container">
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item"><a class="social__link" href="https://t.me/htmlacademy"><span
@@ -283,7 +297,8 @@
         </ul>
       </section>
       <div class="copyright">
-        <a class="copyright__logo-link" href="https://htmlacademy.ru/"><img src="#" alt="логотип htmlacademy"></a>
+        <a class="copyright__logo-link" href="https://htmlacademy.ru/"><img src="images/icons/logo_htmlacademy.svg"
+            width="93" height="26" alt="логотип htmlacademy"></a>
         <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/">.html
             acadedmy</a> © 2021
         </p>
