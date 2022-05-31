@@ -31,6 +31,11 @@ body {
   background-color: #FEAFC3;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .title {
   font-weight: 900;
   font-size: 32px;
@@ -74,12 +79,14 @@ body {
 .actions__item:nth-child(1) {
   background-image: url("../images/raspberry-bg.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   background-color: #FF7799;
 }
 
 .actions__item:nth-child(2) {
   background-image: url("../images/marshmello-bg.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   background-color: #FF7799;
 }
 
@@ -108,6 +115,7 @@ body {
 .advantages {
   background-image: url("../images/advantages-bg.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .advantages__item {
@@ -117,6 +125,7 @@ body {
 .blog {
   background-image: url("../images/post-bg.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .blog__link {
@@ -137,6 +146,7 @@ body {
 .subscribe-form {
   background-image: url("../images/subscribe-bg.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .subscribe-form__text {
@@ -146,6 +156,7 @@ body {
 .delivery {
   background-image: url("../images/delivery-bg.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .delivery__descr {
@@ -159,12 +170,17 @@ body {
 .contacts {
   background-image: url("../images/adress-bg.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .contacts__title {
   font-size: 16px;
   font-weight: 400;
   color: #565C66;
+}
+
+.contacts__wrapper {
+  font-style: normal;
 }
 
 .contacts__adress {
