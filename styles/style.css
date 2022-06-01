@@ -47,15 +47,18 @@ img {
 }
 
 .button {
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
   text-align: center;
+  color: #2D3440;
   background-color: #FCFCFC;
 }
 
 .button--red {
   background-color: #FF2F64;
+  color: #FCFCFC;
 }
 
 .navigation__link {
@@ -73,11 +76,13 @@ img {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.3);
   text-decoration: none;
 }
 
 .user__link--phone {
   font-weight: 700;
+  background-color: transparent;
 }
 
 .slide__descr {
@@ -115,6 +120,10 @@ img {
   text-align: center;
 }
 
+.cards__item {
+  background-color: #FCFCFC;
+}
+
 .cards__item-title {
   font-weight: 700;
   font-size: 20px;
@@ -131,6 +140,10 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.cards__item-btn {
+  background-color: #FF2F64;
 }
 
 .advantages {
@@ -281,17 +294,29 @@ img {
   color: #2D3440;
 }
 
-.filter__group-title {
+.filter {
   font-size: 14px;
   line-height: 20px;
 }
 
-.input-title {
+.filter__group {
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.filter__btn {
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.pagination__item--current {
+  background-color: #FCFCFC;
 }
 
 .pagination__link {
   line-height: 20px;
   text-decoration: none;
+  color: #2D3440;
 }
