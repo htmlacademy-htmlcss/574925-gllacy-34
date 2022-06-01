@@ -216,6 +216,10 @@ img {
   color: #565C66;
 }
 
+.delivery-form {
+  background-color: #FCFCFC;
+}
+
 .delivery-form__text {
   color: #565C66;
 }
@@ -230,6 +234,7 @@ img {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 0;
+  background-color: #FCFCFC;
 }
 
 .contacts__title {
@@ -246,6 +251,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  background-color: #FCFCFC;
 }
 
 .contacts__text {
