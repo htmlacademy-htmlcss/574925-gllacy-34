@@ -526,7 +526,7 @@ textarea {
   background-size: 100% auto;
 }
 
-.delivery__wrapper {
+.delivery__text-wrapper {
   width: 371px;
   padding-top: 103px;
   margin-right: auto;
@@ -542,7 +542,7 @@ textarea {
   color: #565C66;
 }
 
-.delivery-form {
+.delivery__form-wrapper {
   width: 500px;
   padding: 40px;
   background-color: #FCFCFC;
@@ -556,18 +556,19 @@ textarea {
   color: #565C66;
 }
 
-.delivery-form__row:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.delivery-form__row:nth-child(3) {
-  margin-bottom: 32px;
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  column-gap: 16px;
+  row-gap: 20px;
 }
 
 .delivery-form__col {
   margin: 0;
+}
+
+.delivery-form__col--address {
+  grid-column: 1/-1;
 }
 
 .delivery-form__label {
@@ -578,6 +579,7 @@ textarea {
 }
 
 .delivery-form__input {
+  width: 100%;
   height: 48px;
   padding: 14px 16px;
   border: 1px solid #B9B9B9;
@@ -585,16 +587,9 @@ textarea {
   background-color: #FFFFFF;
 }
 
-.delivery-form__input--date {
-  width: 117px;
-}
-
-.delivery-form__input--phone {
-  width: 287px;
-}
-
-.delivery-form__input--address {
-  width: 100%;
+.delivery-form__btn {
+  grid-column: 1/-1;
+  justify-self: center;
 }
 
 .contacts {
