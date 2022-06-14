@@ -194,7 +194,6 @@
                 </a>
                 <p class="cards__item-descr">Ванильный пломбир
                   со сладкой посыпкой</p>
-                <!-- <p class="cards__item-descr">Сливочное мороженое с малиновым джемом</p> -->
                 <div class="cards__item-row">
                   <b class="cards__item-price">320 ₽/кг</b><a class="cards__item-btn" href="#"><span
                       class="visually-hidden">добавить в
@@ -230,23 +229,27 @@
           </div>
         </section>
         <div class="main-index__wrapper section">
-          <article class="main-index__item blog">
+          <article class="main-index__blog blog">
             <a class="blog__link" href="#" aria-label="наш блог">
               <h3 class="blog__title">10 способов сервировки фруктовых щербетов<br>
                 к столу</h3>
             </a>
             <span class="blog__text">Новое в нашем блоге</span>
           </article>
-          <form class="main-index__item subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="main-index__subscribe-form">
             <div class="wrapper">
-              <p class="subscribe-form__text">Подпишитесь на нашу сладкую рассылку и будьте всегда
-                в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
-                ерунды.
-                Честно =)</p>
-              <input class="subscribe-form__input" type="email" placeholder="email@example.com"><button
-                class="subscribe-form__btn link button" type="submit">Отправить</button>
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="subscribe-form__text">Подпишитесь на нашу сладкую рассылку и будьте всегда
+                  в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
+                  ерунды.
+                  Честно =)</p>
+                <input class="subscribe-form__input" type="email" placeholder="email@example.com"><button
+                  class="subscribe-form__btn link button" type="submit">Отправить</button>
+              </form>
             </div>
-          </form>
+
+          </div>
+
         </div>
         <section class="delivery section">
           <div class="delivery__text-wrapper">

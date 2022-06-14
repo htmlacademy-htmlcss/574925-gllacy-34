@@ -452,7 +452,7 @@ textarea {
   justify-content: space-between;
 }
 
-.main-index__item {
+.main-index__blog {
   width: 570px;
 }
 
@@ -489,7 +489,8 @@ textarea {
   color: #565C66;
 }
 
-.subscribe-form {
+.main-index__subscribe-form {
+  width: 570px;
   padding: 6px;
   background-image: url("../images/subscribe-bg.png");
   background-repeat: no-repeat;
@@ -497,7 +498,7 @@ textarea {
   background-size: 100% 100%;
 }
 
-.subscribe-form .wrapper {
+.main-index__subscribe-form .wrapper {
   padding: 26px;
   border-radius: 16px;
   background-color: #FFFFFF;
@@ -512,6 +513,9 @@ textarea {
 .subscribe-form__input {
   width: 332px;
   margin-right: 14px;
+  padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
 }
 
 .delivery {
@@ -564,6 +568,8 @@ textarea {
 }
 
 .delivery-form__col {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
@@ -868,16 +874,10 @@ textarea {
 }
 
 .product__list {
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-
-.product__item {
-  margin-bottom: 91px;
-}
-
-.product__item:nth-child(n+9) {
-  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+  row-gap: 91px;
 }
 
 .pagination {
