@@ -314,6 +314,9 @@ textarea {
 }
 
 .cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 270px;
   border-radius: 8px;
   position: relative;
@@ -322,6 +325,30 @@ textarea {
   padding-bottom: 24px;
   padding-top: 133px;
   background-color: #FCFCFC;
+}
+
+.cards__item-img-link {
+  border-radius: 50%;
+  position: absolute;
+  top: -51px;
+}
+
+.cards__item-img {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+}
+
+.cards__item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.cards__item-title-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .cards__item-title {
@@ -341,6 +368,8 @@ textarea {
 }
 
 .cards__item-row {
+  width: 100%;
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -358,14 +387,6 @@ textarea {
   height: 32px;
   border-radius: 50%;
   background-color: #FF2F64;
-}
-
-.cards__item-img {
-  width: 168px;
-  height: 168px;
-  position: absolute;
-  top: -51px;
-  border-radius: 50%;
 }
 
 .advantages {
