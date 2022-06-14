@@ -301,10 +301,13 @@ textarea {
   text-align: center;
 }
 
+.popular__list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+}
+
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -320,7 +323,6 @@ textarea {
   padding-top: 133px;
   background-color: #FCFCFC;
 }
-
 
 .cards__item-title {
   margin: 0;
@@ -338,6 +340,12 @@ textarea {
   color: #565C66;
 }
 
+.cards__item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .cards__item-price {
   font-weight: 700;
   font-size: 20px;
@@ -345,6 +353,10 @@ textarea {
 }
 
 .cards__item-btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   background-color: #FF2F64;
 }
 
