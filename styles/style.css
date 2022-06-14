@@ -873,6 +873,10 @@ textarea {
   border-radius: 20px;
 }
 
+.product {
+  margin-bottom: 53px
+}
+
 .product__list {
   display: grid;
   grid-template-columns: repeat(4, 270px);
@@ -883,7 +887,6 @@ textarea {
 .pagination {
   display: flex;
   align-items: center;
-  padding-top: 41px;
   padding-bottom: 91px;
 }
 
