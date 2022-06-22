@@ -12,7 +12,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="navigation">
-          <a class="navigation__logo logo"><img src="images/icons/logo-header.svg" width="137" height="55"
+          <a class="navigation__logo logo"><img src="images/svg/logo-header.svg" width="137" height="55"
               alt="логотип Глейси"></a>
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
@@ -23,16 +23,33 @@
             <li class="user__item"><a class="user__link user__link--phone" href="tel:+78005558628">+7800555-86-28</a>
             </li>
             <li class="user__item">
-              <form class="user__form" action="https://echo.htmlacademy.ru/" method="GET">
-                <input class="user__search-btn" type="search" placeholder="Поиск">
+              <a class="user__link user__link--search" href="#"><span class="visually-hidden">форма
+                  поиска</span><svg aria-hidden="true" focusable="false" fill="currentColor" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.663 7.33a4.667 4.667 0 1 1 8.028 3.238.683.683 0 0 0-.123.123A4.667 4.667 0 0 1 2.664 7.33Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" />
+                </svg></a>
+              <form class="user__form form-search" action="https://echo.htmlacademy.ru/" method="GET">
+                <label class="visually-hidden" for="form-search__input">Поиск по сайту</label>
+                <input class="form-search__input" id="form-search__input" type="search" placeholder="Поиск по сайту">
               </form>
             </li>
-            <li class="user__item"><a class="user__link user__link--login" href="#">Вход</a></li>
+            <li class="user__item"><a class="user__link user__link--login" href="#">
+                <svg aria-hidden="true" focusable="false" fill="currentColor" width="16" height="16" viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z" />
+                </svg>Вход</a></li>
             <li class="user__item">
               <a class="user__link user__link--cart cart" href="#">
                 <span class="visually-hidden">Корзина товаров</span>
+                <svg aria-hidden="true" focusable="false" fill="currentColor" width="16" height="16" viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" />
+                </svg>
                 <span class="cart__count">2</span>
-                <span class="cart__text"> товара</span>
+                <span class="cart__text">товара</span>
               </a>
             </li>
           </ul>
@@ -44,7 +61,7 @@
         <h1 class="visually-hidden">Магазин Глейси</h1>
         <div class="slider section">
           <ul class="slider__list">
-            <li class="slider__item slide">
+            <li class="slider__item slider__item--first slider__item--active slide">
               <div class="slide__col">
                 <h3 class="slide__title title">Нежный пломбир <br>с клубничным джемом</h3>
                 <p class="slide__descr">Натуральное мороженое из свежих сливок <br>и молока с вкуснейшим клубничным
@@ -56,7 +73,7 @@
                 с клубничным джемом">
               </div>
             </li>
-            <!-- <li class="slider__item slide">
+            <li class="slider__item slider__item--second slide">
               <div class="slide__col">
                 <h3 class="slide__title">Сливочное мороженое со вкусом банана</h3>
                 <p class="slide__descr">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
@@ -67,8 +84,8 @@
                 <img class="slide__img" src="images/slide-banan.png" width="306" height="507"
                   alt="Сливочное мороженое со вкусом банана">
               </div>
-            </li> -->
-            <!-- <li class="slider__item slide">
+            </li>
+            <li class="slider__item slider__item--last slide">
               <div class="slide__col">
                 <h3 class="slide__title">Карамельный пломбир с маршмеллоу</h3>
                 <p class="slide__descr">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
@@ -79,8 +96,17 @@
                 <img class="slide__img" src="images/slide-marshmello.png" width="306" height="507"
                   alt="Карамельный пломбир с маршмеллоу">
               </div>
-            </li> -->
+            </li>
           </ul>
+          <div class="slider-thumb">
+            <ul class="slider-thumb__list">
+              <li class="slider-thumb__item"><a class="slider-thumb__link" href="#"><img class="slider-thumb__img"
+                    src="images/slide-banan.png" alt="Сливочное мороженое со вкусом банана"></a></li>
+              <li class="slider-thumb__item"><a class="slider-thumb__link" href="#"><img class="slider-thumb__img"
+                    src="images/slide-marshmello.png" alt="Карамельный пломбир
+с маршмеллоу"></a></li>
+            </ul>
+          </div>
           <div class="slider__pagination">
             <button class="slider__btn"><span class="visually-hidden">предыдущий слайд</span></button>
             <button class="slider__btn"><span class="visually-hidden">следующий слайд</span></button>
@@ -249,7 +275,6 @@
             </div>
 
           </div>
-
         </div>
         <section class="delivery section">
           <div class="delivery__text-wrapper">
@@ -319,7 +344,7 @@
           </ul>
         </section>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__logo-link" href="https://htmlacademy.ru/"><img src="images/icons/logo-htmlacademy.svg"
+          <a class="copyright__logo-link" href="https://htmlacademy.ru/"><img src="images/svg/logo-htmlacademy.svg"
               width="93" height="26" alt="логотип htmlacademy"></a>
           <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/">.html
               acadedmy</a> © 2021
