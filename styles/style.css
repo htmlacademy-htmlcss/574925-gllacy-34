@@ -263,10 +263,26 @@ textarea {
   top: 40px;
   background-color: #FCFCFC;
   border-radius: 4px;
-  z-index: 2;
+  z-index: 4;
 }
 
 .popover--show {
+  display: block;
+}
+
+.popover-item {
+  position: relative;
+}
+
+.popover-item:hover > .popover {
+  display: block;
+}
+
+.navigation__item:focus-within .popover {
+  display: block;
+}
+
+.user__item:focus-within .popover {
   display: block;
 }
 
@@ -291,15 +307,15 @@ textarea {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* width: 500px; */
   margin: 0;
   margin-right: auto;
   padding: 0;
+  padding-top: 8px;
   list-style-type: none;
 }
 
 .navigation__item {
-  position: relative;
+  padding-bottom: 8px;
 }
 
 /**/
@@ -334,10 +350,6 @@ textarea {
   background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
   border-radius: 30px;
-}
-
-.navigation__link--catalog:hover + .navigation__catalog {
-  display: block;
 }
 
 /**/
@@ -411,15 +423,15 @@ textarea {
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
-  /* width: 500px; */
   margin: 0;
   padding: 0;
+  padding-top: 8px;
   list-style-type: none;
 }
 
 .user__item {
   margin-right: 16px;
-  position: relative;
+  padding-bottom: 8px;
 }
 
 .user__item:last-child {
