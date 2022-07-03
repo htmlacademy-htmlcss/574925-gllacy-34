@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
 
-  <body>
+  <body class="body-color">
     <header class="main-header">
       <div class="container">
         <nav class="navigation">
@@ -51,7 +51,8 @@
                 <label class="visually-hidden" for="form-search__input">Поиск по сайту</label>
                 <input class="input form-search__input" id="form-search__input" type="text" placeholder="Поиск по сайту"
                   autofocus>
-                <button class="btn-del form-search__btn-reset btn-del--hide"><span class="visually-hidden">очистить поле
+                <button class="btn-del form-search__btn-reset btn-del--hide"><span class="visually-hidden">очистить
+                    поле
                     ввода</span>
                   <svg aria-hidden="true" focusable="false" fill="currentColor" width="10" height="10"
                     viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
@@ -83,9 +84,19 @@
                       type="password">
                   </p>
                   <div class="form-login__wrapper">
-                    <button class="form-login__btn button btn">Войти</button>
-                    <a href="#" class="form-login__link form-login__forgot-password">Забыли пароль?</a>
-                    <a href="#" class="form-login__link form-login__sign-in">Регистрация</a>
+                    <button class="form-login__btn button btn">Войти<svg aria-hidden="true" focusable="false" width="16"
+                        height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.24" cx="8" cy="8" r="7" stroke="#FCFCFC" stroke-width="2"
+                          stroke-linecap="round" />
+                        <path d="M15 8C15 4.13401 11.866 1 8 1" stroke="#FCFCFC" stroke-width="2"
+                          stroke-linecap="round" />
+                      </svg></button>
+                    <span class="form-login__wrap form-login__wrap--forgot-password">
+                      <a href="#" class="form-login__link form-login__forgot-password">Забыли пароль?</a>
+                    </span>
+                    <span class="form-login__wrap form-login__wrap--sign-in">
+                      <a href="#" class="form-login__link form-login__sign-in">Регистрация</a>
+                    </span>
                   </div>
                 </form>
               </div>
@@ -101,10 +112,8 @@
                 <span class="cart__count">2</span>
                 <span class="cart__small">товара</span>
               </a>
-              <div class="cart__empty-cart popover">
+              <div class="cart__content popover">
                 <p class="cart__empty-text subtitle">Ваша корзина пока пуста</p>
-              </div>
-              <div class="cart__noempty-cart popover">
                 <form class="cart-form" action="https://echo.htmlacademy.ru/" method="GET">
                   <h3 class="cart__title subtitle">Корзина</h3>
                   <ul class="cart__list">
@@ -465,14 +474,20 @@
             </p>
             <form class="delivery__form delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="delivery-form__col delivery-form__col--date">
-                <label class="delivery-form__label delivery-form__label--date" for="date">Дата<svg aria-hidden="true"
-                    focusable="false" fill="currentColor" width="14" height="14" viewBox="0 0 14 14"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
-                  </svg></label>
-                <input class="delivery-form__input input delivery-form__input--date" id="date" type="text"
-                  placeholder="01.04.2020">
+                <span class="delivery-form__label"><label class="delivery-form__label delivery-form__label--date"
+                    for="date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip__btn" type="button" aria-labelledby="tooltip-label">
+                      <svg aria-hidden="true" focusable="false" fill="currentColor" width="14" height="14"
+                        viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip__text" role="tooltip" id="tooltip-label">Введите дату доставки</span>
+                  </span>
+                  <input class="delivery-form__input input delivery-form__input--date" id="date" type="text"
+                    placeholder="01.04.2020">
               </p>
               <p class="delivery-form__col delivery-form__col--phone">
                 <label class="delivery-form__label" for="phone">Телефон</label>
@@ -480,12 +495,20 @@
                   placeholder="+7 800 999-00-00">
               </p>
               <p class="delivery-form__col delivery-form__col--address">
-                <label class="delivery-form__label delivery-form__label--address" for="address">Адрес<svg
-                    aria-hidden="true" focusable="false" fill="currentColor" width="14" height="14" viewBox="0 0 14 14"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
-                  </svg></label>
+                <span class="delivery-form__label delivery-form__label--icon"><label
+                    class="delivery-form__label delivery-form__label--address" for="address">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip__btn" type="button" aria-labelledby="tooltip-label">
+                      <svg aria-hidden="true" focusable="false" fill="currentColor" width="14" height="14"
+                        viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip__text" role="tooltip" id="tooltip-label">Введите название улицы, дома и
+                      квартиры</span>
+                  </span>
+                </span></span>
                 <input class="delivery-form__input input delivery-form__input--address" id="address" type="text"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </p>
