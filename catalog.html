@@ -174,6 +174,56 @@
             </fieldset>
             <fieldset class="filter__group filter__group--price price">
               <legend class="filter__group-title">Цена:</legend>
+
+
+
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 40px; width: 56px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="50" name="min-price"> ₽
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
+                  </label>
+                </div>
+              </div>
+
+
+              <!-- <div class="range">
+                <div class="range__scale">
+                  <div class="range__bar" style="left: 42px; width: 136px">
+                    <button class="range__btn btn-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range__btn btn-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="range__wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="50" name="min-price"> ₽
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
+                  </label>
+                </div>
+              </div> -->
+
+
+
             </fieldset>
             <fieldset class="filter__group filter__group--fatness fatness">
               <legend class="filter__group-title">Жирность:</legend>
@@ -566,8 +616,9 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__logo-link" href="https://htmlacademy.ru/"><img src="images/svg/logo-htmlacademy.svg"
               width="93" height="26" alt="логотип htmlacademy"></a>
-          <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/">.html
-              acadedmy</a> © 2021
+          <p class="copyright__text"><span>Сделано в </span><a class="copyright__link"
+              href="https://htmlacademy.ru/">.html
+              acadedmy</a><span> © 2021</span>
           </p>
         </div>
       </div>
