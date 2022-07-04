@@ -2022,3 +2022,61 @@ span.delivery-form__label {
 .main-catalog .container {
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 4;
+}
+
+.modal__show {
+  display: block;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  padding: 64px;
+  padding-bottom: 66px;
+  background-color: #ffffff;
+}
+
+.modal__close-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 32px;
+}
+
+.modal__feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__feedback-group:not(.modal__feedback-group:last-child) {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.modal__feedback-btn {
+  margin-left: auto;
+}
