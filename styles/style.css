@@ -1869,6 +1869,7 @@ span.delivery-form__label {
 
 .filter__group-title {
   position: absolute;
+  padding: 0;
   top: -28px;
   left: 16px;
 }
@@ -1879,14 +1880,15 @@ span.delivery-form__label {
 
 .price {
   width: 196px;
+  position: relative;
   min-height: 36px;
   padding-left: 15px;
   padding-right: 16px;
 }
 
+.range {}
 
-
-.range-scale {
+.range__scale {
   position: relative;
   height: 2px;
   margin-top: 10px;
@@ -1895,7 +1897,7 @@ span.delivery-form__label {
   border: 1px solid rgba(86, 92, 102, 0.3);
 }
 
-.range-bar {
+.range__bar {
   top: -1px;
   position: absolute;
   height: 2px;
@@ -1906,7 +1908,7 @@ span.delivery-form__label {
   z-index: 6;
 }
 
-.range-toggle {
+.range__toggle {
   position: absolute;
   padding: 0;
   width: 16px;
@@ -1918,43 +1920,47 @@ span.delivery-form__label {
   z-index: 3;
 }
 
-.range-toggle:focus {
+.range__toggle:focus {
   background-color: #2D3440;
   border: 6px solid #FCFCFC;
   outline: 2px solid #2D3440;
 }
 
-.range-toggle:hover {
+.range__toggle:hover {
   background-color: #2D3440;
   border: 6px solid #FCFCFC;
 }
 
-.range-toggle:active {
+.range__toggle:active {
   background-color: #2D3440;
   border: 6px solid #2D3440;
 }
 
-.toggle-min {
+.range__toggle--min {
   top: -8px;
   left: -17px;
 }
 
-.toggle-max {
+.range__toggle--max {
   top: -8px;
   right: -17px;
 }
 
-.range-wrapper-inputs {
+.range__wrapper-inputs {
+  position: absolute;
+  top: -28px;
+  left: 55px;
   display: flex;
   justify-content: center;
 }
 
-.catalog-filter-label {
+.range__filter-label {
   display: flex;
   margin-right: 5px;
 }
 
-.range-input {
+
+.range__input {
   width: 30px;
   padding: 0 2px;
   font: inherit;
@@ -1964,12 +1970,22 @@ span.delivery-form__label {
   appearance: textfield;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
+.range__input:focus,
+.range__input:hover {
+  outline: 2px solid #2D3440;
+}
+
+.range__input:active {
+  outline: 1px solid #2D3440;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+}
 
 
 .fatness {

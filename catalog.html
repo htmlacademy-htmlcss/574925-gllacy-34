@@ -166,64 +166,34 @@
           <form class="catalog__form filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__group filter__group--sort sort">
               <legend class="filter__group-title">Сортировка:</legend>
-              <select class="sort__control" name="sorting">
+              <!-- <select class="sort__control" name="sorting">
                 <option value="product">по популярности</option>
                 <option value="cheap">по возростантю цены</option>
                 <option value="expensive">по убыванию цены</option>
-              </select>
+              </select> -->
             </fieldset>
             <fieldset class="filter__group filter__group--price price">
               <legend class="filter__group-title">Цена:</legend>
-
-
-
               <div class="range">
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 40px; width: 56px">
-                    <button class="range-toggle toggle-min">
+                <div class="range__scale">
+                  <div class="range__bar" style="left: 40px; width: 56px">
+                    <button class="range__toggle range__toggle--min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range__toggle range__toggle--max">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
                 </div>
-
-                <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">
-                    от <input class="range-input" type="number" value="50" name="min-price"> ₽
+                <div class="range__wrapper-inputs">
+                  <label class="range__filter-label"><input class="range__input" type="number" value="100"
+                      name="min-price"> ₽
                   </label>
-                  <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
+                  <label class="range__filter-label">
+                    – <input class="range__input" type="number" value="500" name="max-price" style="width: 37px"> ₽
                   </label>
                 </div>
               </div>
-
-
-              <!-- <div class="range">
-                <div class="range__scale">
-                  <div class="range__bar" style="left: 42px; width: 136px">
-                    <button class="range__btn btn-min">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range__btn btn-max">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="range__wrapper-inputs">
-                  <label class="catalog-filter-label">
-                    от <input class="range-input" type="number" value="50" name="min-price"> ₽
-                  </label>
-                  <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
-                  </label>
-                </div>
-              </div> -->
-
-
-
             </fieldset>
             <fieldset class="filter__group filter__group--fatness fatness">
               <legend class="filter__group-title">Жирность:</legend>
