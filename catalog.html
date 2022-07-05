@@ -164,13 +164,13 @@
         <section class="catalog">
           <h2 class="catalog__title visually-hidden">Список товаров с фильтрами</h2>
           <form class="catalog__form filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter__group filter__group--sort sort">
+            <fieldset class="filter__group filter__group--sort sort select">
               <legend class="filter__group-title">Сортировка:</legend>
-              <!-- <select class="sort__control" name="sorting">
+              <select class="sort__control select__control" name="sorting">
                 <option value="product">по популярности</option>
                 <option value="cheap">по возростантю цены</option>
                 <option value="expensive">по убыванию цены</option>
-              </select> -->
+              </select>
             </fieldset>
             <fieldset class="filter__group filter__group--price price">
               <legend class="filter__group-title">Цена:</legend>
@@ -199,20 +199,36 @@
               <legend class="filter__group-title">Жирность:</legend>
               <ul class="filter__group-list fatness__list">
                 <li class="fatness__item">
-                  <label class="fatness__input-title input-title">
-                    <input class="fatness__input" type="radio" value="0%" name="fat-content">0%</label>
+                  <label class="fatness__input-title input-title control">
+                    <input class="fatness__input control__input visually-hidden" type="radio" value="0%"
+                      name="fat-content">
+                    <span class="control__mark"></span>
+                    <span class="control__label">0%</span>
+                  </label>
                 </li>
                 <li class="fatness__item">
-                  <label class="fatness__input-title input-title">
-                    <input class="fatness__input" type="radio" value="до 10%" name="fat-content" checked>до 10%</label>
+                  <label class="fatness__input-title input-title control">
+                    <input class="fatness__input control__input visually-hidden" type="radio" value="до 10%"
+                      name="fat-content" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">до 10%</span>
+                  </label>
                 </li>
                 <li class="fatness__item">
-                  <label class="fatness__input-title input-title">
-                    <input class="fatness__input" type="radio" value="до 30%" name="fat-content">до 30%</label>
+                  <label class="fatness__input-title input-title control">
+                    <input class="fatness__input control__input visually-hidden" type="radio" value="до 30%"
+                      name="fat-content">
+                    <span class="control__mark"></span>
+                    <span class="control__label">до 30%</span>
+                  </label>
                 </li>
                 <li class="fatness__item">
-                  <label class="fatness__input-title input-title">
-                    <input class="fatness__input" type="radio" value="выше 30%" name="fat-content">выше 30%</label>
+                  <label class="fatness__input-title input-title control">
+                    <input class="fatness__input control__input visually-hidden" type="radio" value="выше 30%"
+                      name="fat-content">
+                    <span class="control__mark"></span>
+                    <span class="control__label">выше 30%</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -220,24 +236,86 @@
               <legend class="filter__group-title">Наполнители:</legend>
               <ul class="filter__group-list fatness__list">
                 <li class="filler__item">
-                  <label class="filler__input-title input-title">
-                    <input class="filler__input" type="checkbox" name="chocolate" checked>шоколадные</label>
+                  <label class="filler__input-title input-title control">
+                    <input class="filler__input control__input visually-hidden" type="checkbox" name="chocolate"
+                      checked>
+                    <svg class="control__icon control__icon--checked" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" />
+                    </svg>
+                    <svg class="control__icon control__icon--empty" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.963.963 0 0 1 .681-.282h11.407c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.459.158.664.664 0 0 1 1.889 0h11.814c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" />
+                    </svg>
+                    <span class="control__label">шоколадные</span>
+                  </label>
                 </li>
                 <li class="filler__item">
-                  <label class="filler__input-title input-title">
-                    <input class="filler__input" type="checkbox" name="sugar sprinkles" checked>сахарные посыпки</label>
+                  <label class="filler__input-title input-title control">
+                    <input class="filler__input control__input visually-hidden" type="checkbox" name="sugar sprinkles"
+                      checked>
+                    <svg class="control__icon control__icon--checked" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" />
+                    </svg>
+                    <svg class="control__icon control__icon--empty" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.963.963 0 0 1 .681-.282h11.407c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.459.158.664.664 0 0 1 1.889 0h11.814c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" />
+                    </svg>
+                    <span class="control__label">сахарные посыпки</span>
+                  </label>
                 </li>
                 <li class="filler__item">
-                  <label class="filler__input-title input-title">
-                    <input class="filler__input" type="checkbox" name="fruits">фрукты</label>
+                  <label class="filler__input-title input-title control">
+                    <input class="filler__input control__input visually-hidden" type="checkbox" name="fruits">
+                    <svg class="control__icon control__icon--checked" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" />
+                    </svg>
+                    <svg class="control__icon control__icon--empty" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.963.963 0 0 1 .681-.282h11.407c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.459.158.664.664 0 0 1 1.889 0h11.814c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" />
+                    </svg>
+                    <span class="control__label">фрукты</span>
+                  </label>
                 </li>
                 <li class="filler__item">
-                  <label class="filler__input-title input-title">
-                    <input class="filler__input" type="checkbox" name="syrups">сиропы</label>
+                  <label class="filler__input-title input-title control">
+                    <input class="filler__input control__input visually-hidden" type="checkbox" name="syrups">
+                    <svg class="control__icon control__icon--checked" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" />
+                    </svg>
+                    <svg class="control__icon control__icon--empty" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.963.963 0 0 1 .681-.282h11.407c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.459.158.664.664 0 0 1 1.889 0h11.814c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" />
+                    </svg>
+                    <span class="control__label">сиропы</span>
+                  </label>
                 </li>
                 <li class="filler__item">
-                  <label class="filler__input-title input-title">
-                    <input class="filler__input" type="checkbox" name="джемы">джемы</label>
+                  <label class="filler__input-title input-title control">
+                    <input class="filler__input control__input visually-hidden" type="checkbox" name="джемы">
+                    <svg class="control__icon control__icon--checked" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" />
+                    </svg>
+                    <svg class="control__icon control__icon--empty" aria-hidden="true" focusable="false"
+                      fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.615 1.615a.963.963 0 0 1 .681-.282h11.407c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.459.158.664.664 0 0 1 1.889 0h11.814c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" />
+                    </svg>
+                    <span class="control__label">джемы</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -464,7 +542,7 @@
                   <a class="cards__item-title-link" href="#">
                     <h3 class="cards__item-title">Орешек</h3>
                   </a>
-                  <p class="cards__item-descr">Фисташковый пломбир<br> с шоколадным сиропо</p>
+                  <p class="cards__item-descr">Фисташковый пломбир<br> с шоколадным сиропом</p>
                   <div class="cards__item-row">
                     <b class="cards__item-price">360 ₽/кг</b><a class="cards__item-btn" href="#"><span
                         class="visually-hidden">добавить в
