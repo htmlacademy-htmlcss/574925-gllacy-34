@@ -474,20 +474,22 @@
             </p>
             <form class="delivery__form delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="delivery-form__col delivery-form__col--date">
-                <span class="delivery-form__label"><label class="delivery-form__label delivery-form__label--date"
-                    for="date">Дата</label>
+                <span class="delivery-form__label">
+                  <label class="delivery-form__label delivery-form__label--date" for="date">Дата</label>
                   <span class="tooltip">
-                    <button class="tooltip__btn" type="button" aria-labelledby="tooltip-label">
+                    <button class="tooltip__btn" type="button" aria-labelledby="tooltip-label-date">
                       <svg aria-hidden="true" focusable="false" fill="currentColor" width="14" height="14"
                         viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
                       </svg>
                     </button>
-                    <span class="tooltip__text" role="tooltip" id="tooltip-label">Введите дату доставки</span>
+                    <span class="tooltip__text" role="tooltip" id="tooltip-label-date">Введите дату доставки</span>
                   </span>
-                  <input class="delivery-form__input input delivery-form__input--date" id="date" type="text"
-                    placeholder="01.04.2020">
+                </span>
+                <input class="delivery-form__input input delivery-form__input--date" id="date" type="text"
+                  placeholder="01.04.2020">
+
               </p>
               <p class="delivery-form__col delivery-form__col--phone">
                 <label class="delivery-form__label" for="phone">Телефон</label>
@@ -495,20 +497,20 @@
                   placeholder="+7 800 999-00-00">
               </p>
               <p class="delivery-form__col delivery-form__col--address">
-                <span class="delivery-form__label delivery-form__label--icon"><label
-                    class="delivery-form__label delivery-form__label--address" for="address">Адрес</label>
+                <span class="delivery-form__label">
+                  <label class="delivery-form__label delivery-form__label--address" for="address">Адрес</label>
                   <span class="tooltip">
-                    <button class="tooltip__btn" type="button" aria-labelledby="tooltip-label">
+                    <button class="tooltip__btn" type="button" aria-labelledby="tooltip-label-address">
                       <svg aria-hidden="true" focusable="false" fill="currentColor" width="14" height="14"
                         viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
                       </svg>
                     </button>
-                    <span class="tooltip__text" role="tooltip" id="tooltip-label">Введите название улицы, дома и
+                    <span class="tooltip__text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и
                       квартиры</span>
                   </span>
-                </span></span>
+                </span>
                 <input class="delivery-form__input input delivery-form__input--address" id="address" type="text"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </p>
@@ -587,8 +589,9 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__logo-link" href="https://htmlacademy.ru/"><img src="images/svg/logo-htmlacademy.svg"
               width="93" height="26" alt="логотип htmlacademy"></a>
-          <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/">.html
-              acadedmy</a> © 2021
+          <p class="copyright__text"><span>Сделано в </span><a class="copyright__link"
+              href="https://htmlacademy.ru/">.html
+              acadedmy</a><span> © 2021</span>
           </p>
         </div>
       </div>
