@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body class="body-color">
@@ -235,19 +235,19 @@
             </button>
           </div>
           <div class="slider__navigation">
-            <div class="slider__indicators slide-indicators">
+            <div class="slider__indicator slide-indicator">
               <h3 class="visually-hidden">Индикаторы слайдов</h3>
-              <ol class="slide-indicators__list">
-                <li class="slide-indicators__item">
+              <ol class="slide-indicator__list">
+                <li class="slide-indicator__item">
                   <button class="slide__indicator-btn slide__indicator-btn--current" type="button"><span
                       class="visually-hidden">слайд
                       №1</span></button>
                 </li>
-                <li class="slide-indicators__item">
+                <li class="slide-indicator__item">
                   <button class="slide__indicator-btn" type="button"><span class="visually-hidden">слайд
                       №2</span></button>
                 </li>
-                <li class="slide-indicators__item">
+                <li class="slide-indicator__item">
                   <button class="slide__indicator-btn" type="button"><span class="visually-hidden">слайд
                       №3</span></button>
                 </li>
@@ -412,40 +412,32 @@
           <div class="wrapper">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <b class="advantages__title title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
-              собственного
-              производства на развес</b>
+              собственного производства на развес</b>
             <ul class="advantages__list">
-              <li class="advantages__item">Всё наше мороженое изготавливается на собственном производстве с
-                использованием
-                современного оборудования и проверенных
-                временем технологий.</li>
-              <li class="advantages__item">Для приготовления мороженого используются сливки и молоко высочайшего
-                качества.
-                Все ингредиенты <br>
-                и добавки произведены из натурального сырья.</li>
-              <li class="advantages__item">Закупка ингредиентов производится только<br>
-                у проверенных фермерских хозяйств, с которыми<br>
-                нас связывает долговременное сотрудничество.</li>
-              <li class="advantages__item">Доставка нашего мороженого осуществляется в специальном термопаке, который не
-                даёт
-                мороженому растаять и позволяет
-                сохранить превосходный вкус.</li>
+              <li class="advantages__item advantages__item--ice-cream">Всё наше мороженое изготавливается на собственном
+                производстве с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="advantages__item advantages__item--leaf">Для приготовления мороженого используются сливки и
+                молоко высочайшего качества. Все ингредиенты <br>и добавки произведены из натурального сырья.</li>
+              <li class="advantages__item advantages__item--cow">Закупка ингредиентов производится только<br> у
+                проверенных фермерских хозяйств, с которыми<br> нас связывает долговременное сотрудничество.</li>
+              <li class="advantages__item advantages__item--thermometer">Доставка нашего мороженого осуществляется в
+                специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
             </ul>
           </div>
         </section>
         <div class="main-index__wrapper section">
           <article class="main-index__blog blog">
             <a class="blog__link" href="#" aria-label="наш блог">
-              <h3 class="blog__title subtitle">10 способов сервировки фруктовых щербетов<br>
-                к столу</h3>
+              <h3 class="blog__title subtitle">10 способов сервировки фруктовых щербетов
+                к&nbsp;столу</h3>
             </a>
             <span class="blog__text">Новое в нашем блоге</span>
           </article>
           <div class="main-index__subscribe-form">
             <div class="wrapper">
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p class="subscribe-form__text">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>
-                  в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
+                <p class="subscribe-form__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего
+                  самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
                   ерунды.
                   Честно =)</p>
                 <input class="subscribe-form__input input" type="email" placeholder="email@example.com"><button
@@ -532,12 +524,13 @@
               <p class="contacts__text">Для заказов по телефону:</p>
               <a class="contacts__link contacts__link--tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
               <small class="contacts__small-text">(с 10 до 20 ежедневно)</small>
-              <a class="contacts__link contacts__link--form button btn" href="#">Форма
+              <button class="contacts__link contacts__link--form button btn" type="button">Форма
                 обратной связи<svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle opacity="0.24" cx="8" cy="8" r="7" stroke="#242424" stroke-width="2" stroke-linecap="round" />
                   <path d="M15 8C15 4.13401 11.866 1 8 1" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" />
-                </svg></a>
+                </svg>
+              </button>
             </address>
           </div>
         </section>

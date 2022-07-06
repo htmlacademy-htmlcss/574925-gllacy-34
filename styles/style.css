@@ -42,7 +42,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #2D3440;
-  background-color: #FEAFC3;
+
 }
 
 main {
@@ -66,7 +66,19 @@ textarea {
   margin: 0;
 }
 
-.main-container {
+.body-color {
+  background-color: #FEAFC3;
+}
+
+.body-color-blue {
+  background-color: #69A9FF;
+}
+
+.body-color-gold {
+  background-color: #FCC850;
+}
+
+.body-color .main-container {
   flex-grow: 1;
 }
 
@@ -131,7 +143,7 @@ textarea {
   outline: none;
 }
 
-.link:not(.link--disabled):hover {
+.link:not(.link--disabled):not(.link:focus):hover {
   background-color: rgba(252, 252, 252, 0.4);
   border: 4px solid #FCFCFC;
   outline: none;
@@ -192,7 +204,7 @@ textarea {
   outline: none;
 }
 
-.btn:hover {
+.btn:hover:not(.btn:focus) {
   background-color: rgba(252, 252, 252, 0.3);
   border: 4px solid #FF2F64;
   outline: none;
@@ -262,8 +274,8 @@ textarea {
 }
 
 .input:focus {
-  padding: 12px 14px;
-  border: 2px solid #2D3440;
+  border: 1px solid #2D3440;
+  box-shadow: 1px 1px 0 0 #2D3440, -1px -1px 0 0 #2D3440;
   outline: none;
 }
 
@@ -272,8 +284,8 @@ textarea {
 }
 
 .input:invalid:hover {
-  padding: 12px 14px;
-  border: 2px solid #EA5454;
+  border: 1px solid #EA5454;
+  box-shadow: 1px 1px 0 0 #EA5454, -1px -1px 0 0 #EA5454;
 }
 
 .input:hover {
@@ -643,6 +655,9 @@ textarea {
 }
 
 .form-login__btn {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   grid-area: button;
 }
 
@@ -670,10 +685,14 @@ textarea {
 }
 
 .form-login__wrap--forgot-password {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: forgot;
 }
 
 .form-login__wrap--sign-in {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: sign-in;
 }
 
@@ -908,7 +927,7 @@ textarea {
   padding-top: 2px;
 }
 
-.slide-indicators__list {
+.slide-indicator__list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -916,11 +935,11 @@ textarea {
   list-style-type: none;
 }
 
-.slide-indicators__item {
+.slide-indicator__item {
   margin-right: 8px;
 }
 
-.slide-indicators__item:last-child {
+.slide-indicator__item:last-child {
   margin-right: 0;
 }
 
@@ -1087,6 +1106,11 @@ textarea {
   top: -51px;
 }
 
+.cards__item-img-link:focus,
+.cards__item-img-link:hover {
+  outline: 2px solid #2D3440;
+}
+
 .cards__item-img {
   width: 168px;
   height: 168px;
@@ -1107,6 +1131,11 @@ textarea {
   text-decoration: none;
 }
 
+.cards__item-title-link:focus,
+.cards__item-title-link:hover {
+  outline: 2px solid #2D3440;
+}
+
 .cards__item-title {
   margin-bottom: 8px;
   font-weight: 700;
@@ -1114,6 +1143,7 @@ textarea {
   line-height: 24px;
   text-align: center;
 }
+
 
 .cards__item-descr {
   margin: 0;
@@ -1194,6 +1224,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: 50% 0;
+  background-color: #E1CCA3;
 }
 
 .advantages .wrapper {
@@ -1241,7 +1272,7 @@ textarea {
   margin-bottom: 40px;
 }
 
-.advantages__item:nth-child(1)::before {
+.advantages__item--ice-cream::before {
   background-image: url('../images/svg/ice-cream.svg');
 }
 
@@ -1249,7 +1280,7 @@ textarea {
   order: 3;
 }
 
-.advantages__item:nth-child(2)::before {
+.advantages__item--leaf::before {
   background-image: url('../images/svg/leaf.svg');
 }
 
@@ -1258,7 +1289,7 @@ textarea {
   margin-bottom: 40px;
 }
 
-.advantages__item:nth-child(3)::before {
+.advantages__item--cow::before {
   background-image: url('../images/svg/cow.svg');
 }
 
@@ -1266,7 +1297,7 @@ textarea {
   order: 4;
 }
 
-.advantages__item:nth-child(4)::before {
+.advantages__item--thermometer::before {
   background-image: url('../images/svg/thermometer.svg');
 }
 
@@ -1323,6 +1354,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: -5px 0;
   background-size: 102%;
+  background-color: #BDBBB9;
 }
 
 .main-index__subscribe-form .wrapper {
@@ -1353,7 +1385,7 @@ textarea {
   min-height: 534px;
   padding: 64px;
   padding-left: 100px;
-  background-color: #FFFFFF;
+  background-color: #F1F1F1;
   background-image: url("../images/delivery-bg.jpg");
   background-repeat: no-repeat;
   background-position: 3px -138px;
@@ -1528,7 +1560,7 @@ span.delivery-form__label {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 -83px;
-  background-color: #FCFCFC;
+  background-color: #DED2D0;
 }
 
 .contacts__wrapper {
@@ -2347,6 +2379,10 @@ span.delivery-form__label {
 .modal__feedback-group:not(.modal__feedback-group:last-child) {
   margin: 0;
   margin-bottom: 16px;
+}
+
+.modal__feedback-input {
+  resize: none;
 }
 
 .modal__feedback-btn {
