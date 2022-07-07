@@ -49,9 +49,11 @@
                 </svg></a>
               <form class="popover form-search" action="https://echo.htmlacademy.ru/" method="GET">
                 <label class="visually-hidden" for="form-search__input">Поиск по сайту</label>
-                <input class="input form-search__input" id="form-search__input" type="text" placeholder="Поиск по сайту"
-                  autofocus>
-                <button class="btn-del form-search__btn-reset btn-del--hide"><span class="visually-hidden">очистить поле
+                <input class="input form-search__input" id="form-search__input" name="search-text" type="text"
+                  placeholder="Поиск по сайту" autofocus>
+                <button class="btn-del form-search__btn-reset btn-del--hide" type="button"><span
+                    class="visually-hidden">очистить
+                    поле
                     ввода</span>
                   <svg aria-hidden="true" focusable="false" fill="currentColor" width="10" height="10"
                     viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
@@ -61,51 +63,54 @@
               </form>
             </li>
             <li class="user__item popover-item">
-              <a class="user__link user__link--login" href="#"><svg aria-hidden="true" focusable="false"
-                  fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <a class="user__link user__link--login" href="#">
+                <svg aria-hidden="true" focusable="false" fill="currentColor" width="16" height="16" viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z" />
                 </svg>Вход</a>
               <div class="popover">
-                <form class="form-login" action="https://echo.htmlacademy.ru/" method="POST">
+                <form class="form-login" action="https://echo.htmlacademy.ru/" method="GET">
                   <h3 class="form-login__title subtitle">Личный кабинет</h3>
                   <p class="form-login__row">
                     <label for="form-login__input--mail" class="form-login__label visually-hidden">Поле ввода
                       электронной
                       почты</label>
                     <input class="input  form-login__input form-login__input--mail" id="form-login__input--mail"
-                      type="email" placeholder="email@example.com">
+                      type="email" name="email" placeholder="email@example.com">
                   </p>
                   <p class="form-login__row">
                     <label for="form-login__input--password" class="form-login__label visually-hidden">Поле ввода
                       пароля</label>
                     <input class="input  form-login__input form-login__input--password" id="form-login__input--password"
-                      type="password">
+                      name="password" type="password">
                   </p>
                   <div class="form-login__wrapper">
-                    <button class="form-login__btn button btn">Войти</button>
-                    <a href="#" class="form-login__link form-login__forgot-password">Забыли пароль?</a>
-                    <a href="#" class="form-login__link form-login__sign-in">Регистрация</a>
+                    <button class="form-login__btn button btn" type="submit">Войти</button>
+                    <span class="form-login__wrap form-login__wrap--forgot-password">
+                      <a class="form-login__link form-login__forgot-password" href="#">Забыли пароль?</a>
+                    </span>
+                    <span class="form-login__wrap form-login__wrap--sign-in">
+                      <a class="form-login__link form-login__sign-in" href="#">Регистрация</a>
+                    </span>
                   </div>
                 </form>
               </div>
             </li>
             <li class="user__item popover-item">
-              <a class="user__link user__link--cart cart" href="#">
+              <a class="user__link user__link--cart" href="#">
                 <span class="visually-hidden">Корзина товаров</span>
                 <svg aria-hidden="true" focusable="false" fill="currentColor" width="16" height="16" viewBox="0 0 16 16"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" />
                 </svg>
-                <span class="cart__count">2</span>
-                <span class="cart__small">товара</span>
+                <span class="user__cart-count">2</span>
+                <span class="user__cart-small">товара</span>
               </a>
-              <div class="cart__empty-cart popover">
+              <div class="cart popover">
                 <p class="cart__empty-text subtitle">Ваша корзина пока пуста</p>
-              </div>
-              <div class="cart__noempty-cart popover">
-                <form class="cart-form" action="https://echo.htmlacademy.ru/" method="GET">
+                <form class="cart__form" action="https://echo.htmlacademy.ru/" method="GET">
                   <h3 class="cart__title subtitle">Корзина</h3>
                   <ul class="cart__list">
                     <li class="cart__item">
@@ -115,7 +120,8 @@
                         <p class="cart__item-descr">1 кг х 310 ₽</p>
                       </div>
                       <span class="cart__item-price">310 ₽</span>
-                      <button class="cart__item-del btn-del"><span class="visually-hidden">удалить товар</span>
+                      <button class="cart__item-del btn-del" type="button"><span class="visually-hidden">удалить
+                          товар</span>
                         <svg aria-hidden="true" focusable="false" fill="currentColor" width="10" height="10"
                           viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -129,7 +135,8 @@
                         <p class="cart__item-descr">1,5 кг х 320 ₽</p>
                       </div>
                       <span class="cart__item-price">480 ₽</span>
-                      <button class="cart__item-del btn-del"><span class="visually-hidden">удалить товар</span>
+                      <button class="cart__item-del btn-del" type="button"><span class="visually-hidden">удалить
+                          товар</span>
                         <svg aria-hidden="true" focusable="false" fill="currentColor" width="10" height="10"
                           viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -177,10 +184,10 @@
               <div class="range">
                 <div class="range__scale">
                   <div class="range__bar" style="left: 40px; width: 56px">
-                    <button class="range__toggle range__toggle--min">
+                    <button class="range__toggle range__toggle--min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range__toggle range__toggle--max">
+                    <button class="range__toggle range__toggle--max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -234,7 +241,7 @@
             </fieldset>
             <fieldset class="filter__group filter__group--filler filler">
               <legend class="filter__group-title">Наполнители:</legend>
-              <ul class="filter__group-list fatness__list">
+              <ul class="filter__group-list filler__list">
                 <li class="filler__item">
                   <label class="filler__input-title input-title control">
                     <input class="filler__input control__input visually-hidden" type="checkbox" name="chocolate"
@@ -368,7 +375,7 @@
               <li class="product__item cards__item">
                 <a class="cards__item-img-link" href="#">
                   <img class="cards__item-img" src="images/goods/blueberry.jpg" width="168" height="168"
-                    alt="рем-брюле с черничным джемом">
+                    alt="Крем-брюле с черничным джемом">
                 </a>
                 <div class="cards__item-content">
                   <a class="cards__item-title-link" href="#">
@@ -578,7 +585,7 @@
             </ul>
           </div>
           <div class="catalog__row pagination">
-            <button class="pagination__btn--show-more button link" type="button">Показать ещё</button>
+            <button class="pagination__btn-show-more button link" type="button">Показать ещё</button>
             <ul class="pagination__list">
               <li class="pagination__item">
                 <button class="pagination__btn pagination__btn--prev" type="button" disabled><span
