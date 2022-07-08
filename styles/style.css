@@ -1310,11 +1310,11 @@ textarea {
 
 .advantages {
   padding: 24px;
+  background-position: 50% 0;
+  background-color: #e1cca3;
   background-image: url("../images/advantages-bg.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: 50% 0;
-  background-color: #e1cca3;
 }
 
 .advantages .wrapper {
@@ -1437,11 +1437,11 @@ textarea {
   padding: 6px;
   min-height: 224px;
   border-radius: 16px;
+  background-size: 102%;
+  background-color: #bdbbb9;
   background-image: url("../images/subscribe-bg.png");
   background-repeat: no-repeat;
   background-position: -5px 0;
-  background-size: 102%;
-  background-color: #bdbbb9;
 }
 
 .main-index__subscribe-form .wrapper {
@@ -1636,11 +1636,11 @@ textarea {
 .contacts {
   padding: 64px;
   border-radius: 16px;
+  background-color: #ded2d0;
   background-image: url("../images/adress-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 -83px;
-  background-color: #ded2d0;
 }
 
 .contacts__wrapper {
