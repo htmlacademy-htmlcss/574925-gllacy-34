@@ -155,7 +155,7 @@ textarea {
   position: absolute;
   width: 16px;
   height: 16px;
-  border: 2px solid currentColor;
+  border: 2px solid currentcolor;
   border-color: #242424 transparent transparent transparent;
   right: 32px;
   border-radius: 50%;
@@ -204,7 +204,7 @@ textarea {
   position: absolute;
   width: 16px;
   height: 16px;
-  border: 2px solid currentColor;
+  border: 2px solid currentcolor;
   border-color: #242424 transparent transparent transparent;
   right: 32px;
   border-radius: 50%;
@@ -677,11 +677,8 @@ textarea {
 }
 
 .user__link--phone:focus {
-  outline: 2px solid #2d3440;
-}
-
-.user__link--phone:hover {
   opacity: 0.8;
+  outline: 2px solid #2d3440;
 }
 
 .user__link--active {
@@ -2138,8 +2135,6 @@ textarea {
 .control:hover .control__input[type="radio"]:disabled ~ .control__mark::before {
   background-color: #2d3440;
 }
-
-
 
 .control__icon {
   position: absolute;
