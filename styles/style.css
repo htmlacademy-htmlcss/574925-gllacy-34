@@ -914,7 +914,7 @@ textarea {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #ffcbf8;
+  background-color: #ffcbd8;
   z-index: -1;
 }
 
@@ -1701,8 +1701,8 @@ textarea {
 }
 
 .main-footer {
-  padding: 40px;
-  padding-top: 39px;
+  padding-top: 42px;
+  padding-bottom: 48px;
 }
 
 .main-footer .container {
@@ -1710,27 +1710,26 @@ textarea {
 }
 
 .main-footer__social {
-  margin-right: 299px;
-  padding-top: 5px;
+  margin-right: auto;
+  padding-top: 3px;
+}
+
+.main-footer__copyright {
+  padding-top: 3px;
 }
 
 .social {
-  padding-left: 4px;
+  padding-left: 3px;
 }
 
 .social__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
+  grid-gap: 16px;
+  max-width: 390px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.social__item {
-  margin-right: 16px;
-}
-
-.social__item:last-child {
-  margin-right: 0;
 }
 
 .social__link {
@@ -1777,7 +1776,6 @@ textarea {
   background-color: #2d3440;
 }
 
-
 .social__link:active {
   outline: 2px solid rgba(252, 252, 252, 0.5);
   opacity: 0.5;
@@ -1797,19 +1795,13 @@ textarea {
   width: 360px;
   margin: 0;
   padding: 0;
-  padding-top: 3px;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.info__item {
-  width: 174px;
+  display: grid;
+  grid-template-columns: 150px 182px;
+  grid-column-gap: 24px;
 }
 
 .info__item:nth-child(1) {
-  order: 1;
-  padding-left: 24px;
   margin-bottom: 6px;
   position: relative;
 }
@@ -1824,20 +1816,12 @@ textarea {
   background-image: url("../images/svg/heart-fill.svg");
 }
 
-.info__item:nth-child(2) {
-  order: 3;
-  padding-left: 24px;
-}
-
 .info__item:nth-child(3) {
-  width: 182px;
-  order: 2;
   margin-bottom: 6px;
 }
 
-.info__item:nth-child(4) {
-  width: 182px;
-  order: 4;
+.info__item:nth-child(odd) {
+  padding-left: 24px;
 }
 
 .info__link {
@@ -1853,7 +1837,7 @@ textarea {
 
 .copyright {
   min-width: 193px;
-  padding-top: 5px;
+  margin-right: 14px;
 }
 
 .copyright__logo-link {
@@ -2264,13 +2248,6 @@ textarea {
 
 .filler {
   width: 604px;
-}
-
-.filler__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .filler__item:not(:last-child) {
