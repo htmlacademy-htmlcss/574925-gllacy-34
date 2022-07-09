@@ -539,11 +539,19 @@
         <section class="main-footer__info info">
           <h2 class="info__title visually-hidden">Дополнительная информация.</h2>
           <ul class="info__list">
-            <li class="info__item info__item--suppliers"><a class="info__link info__link--suppliers" href="#">Для
-                поставщиков</a></li>
-            <li class="info__item"><a class="info__link" href="#">О производстве</a></li>
-            <li class="info__item"><a class="info__link" href="#">Наши документы</a></li>
-            <li class="info__item"><a class="info__link" href="#">Экологические стандарты</a></li>
+            <li class="info__item info__item--suppliers">
+              <a class="info__link info__link--suppliers" href="#">Для
+                поставщиков</a>
+            </li>
+            <li class="info__item">
+              <a class="info__link" href="#">Наши документы</a>
+            </li>
+            <li class="info__item">
+              <a class="info__link" href="#">О производстве</a>
+            </li>
+            <li class="info__item">
+              <a class="info__link" href="#">Экологические стандарты</a>
+            </li>
           </ul>
         </section>
         <div class="main-footer__copyright copyright">
@@ -561,7 +569,7 @@
       <div class="modal__container">
         <button class="modal__close-btn btn-del" type="button">
           <span class="visually-hidden">Закрыть.</span>
-          <svg aria-hidden="true" focusable="false" fill="currentColor" width="10" height="10" viewBox="0 0 10 10"
+          <svg aria-hidden="true" focusable="false" fill="currentColor" width="12" height="12" viewBox="0 0 10 10"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z" />
@@ -580,10 +588,10 @@
             <input class="modal__feedback-input input" id="modal__feedback-email-input" type="email"
               placeholder="email@example.com" name="feedback-email">
           </p>
-          <p class="modal__feedback-group">
+          <p class="modal__feedback-group modal__feedback-group--textarea">
             <label class="modal__feedback-label visually-hidden" for="modal__feedback-text-input">Текст
               сообщения.</label>
-            <textarea class="modal__feedback-input input" id="modal__feedback-text-input"
+            <textarea class="modal__feedback-input modal__feedback-textarea input" id="modal__feedback-text-input"
               placeholder="В свободной форме" name="feedback-text"></textarea>
           </p>
           <button class="modal__feedback-btn button btn" type="submit">Отправить</button>
